@@ -13,23 +13,23 @@
     <div class="wrapper">
         <section class="socialMedia">
             <ul class="sci">
-                <li>
+                <li data-text="Facebook" data-color="#1877f2">
                     <a href="#" class="facebook">
                         <i class="fa fa-facebook" aria-hidden="true"></i>
                     </a>
                 </li>
-                <li>
-                    <a href="#" class="youtube">
+                <li data-text="Youtube" data-color="#ff0000">
+                    <a href="#" class="youtube" >
                         <i class="fa fa-youtube" aria-hidden="true"></i>
                     </a>
                 </li>
-                <li>
-                    <a href="#" class="twitter">
+                <li data-text="Twitter" data-color="#0099ff">
+                    <a href="#" class="twitter" >
                         <i class="fa fa-twitter" aria-hidden="true"></i>
                     </a>
                 </li>
-                <li>
-                    <a href="#" class="instagram">
+                <li data-text="Instagram" data-color="#e4405f">
+                    <a href="#" class="instagram" >
                         <i class="fa fa-instagram" aria-hidden="true"></i>
                     </a>
                 </li>
@@ -37,7 +37,20 @@
         </section>
     </div>
 
-
     <script src="./myscripts.js"></script> 
+
+    
+    <!-- //vanilla tilt.js  -- https://micku7zu.github.io/vanilla-tilt.js/    -->
+    <script src="./vanilla-tilt.min.js"></script>
+
+    <script>
+    //<!-- 'vanilla-tilt' for 3D effect -->
+        VanillaTilt.init(document.querySelector(".sci li a"), {
+		max: 30,
+		speed: 400,
+        glare: true,
+        "max-glare": 1,
+	});
+    </script>
 </body>
 </html>

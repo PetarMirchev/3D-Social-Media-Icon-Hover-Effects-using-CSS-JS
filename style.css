@@ -17,6 +17,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
+    transition: 0.5s;
 }
 
 
@@ -33,17 +35,41 @@
 }
 
 
+.sci li::before
+{
+    content: attr(data-text);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, calc(-50% + 120px));
+    font-size: 4rem;
+    pointer-events: none;
+    font-weight: 700;
+    transform: 0.5s;
+    opacity: 0;
+}
+
+
+
+.sci li:hover:before
+{
+    opacity: 0.1;
+    transform: translate(-50%, calc(-50% + 150px));
+}
+
+
+
 .sci li a
 {
     position: relative;
     display: inline-block;
-    white-space: 120px;
+    width: 120px;
     height: 120px;
     background: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgb(66, 61, 61);
+    color: rgb(49, 36, 36);
     border-radius: 10px;
     text-decoration: none;
     margin: 20px;
@@ -52,6 +78,11 @@
     perspective: 500px;
     box-shadow: 0 25px 35px rgba(0, 0, 0, 0.1);
     transition: background 0.25s;
+}
+
+.js-tilt-glare
+{
+    border-radius: 10px;
 }
 
 
@@ -86,4 +117,5 @@
 .sci li a:hover .fa 
 {
     color: white;
+    transform: scale(1.5) translateZ(15px);
 }
