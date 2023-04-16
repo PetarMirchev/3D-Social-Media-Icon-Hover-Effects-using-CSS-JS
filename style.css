@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.wrapper
+{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100wh;
+    height: 100wh;
+}
+
+
+.socialMedia 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.sci 
+{
+    position: relative;
+    display: flex;
+}
+
+
+.sci li 
+{
+    list-style: none;
+}
+
+
+.sci li a
+{
+    position: relative;
+    display: inline-block;
+    white-space: 120px;
+    height: 120px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(66, 61, 61);
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 20px;
+    font-size: 4em;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    box-shadow: 0 25px 35px rgba(0, 0, 0, 0.1);
+    transition: background 0.25s;
+}
+
+
+.sci li a:hover.facebook
+{
+    background: #1877f2;
+}
+
+.sci li a:hover.youtube
+{
+    background: #ff0000;
+}
+
+.sci li a:hover.twitter
+{
+    background: #0099ff;
+}
+
+.sci li a:hover.instagram
+{
+    background: #e4405f;
+}
+
+
+.sci li a .fa 
+{
+    transition: 0.25s;
+    pointer-events: none;
+}
+
+
+.sci li a:hover .fa 
+{
+    color: white;
+}
