@@ -4,6 +4,8 @@
 
 creating a beautiful 3D animated effect on social network icons
 
+DEMO ---> https://petarmirchev.github.io/3D-Social-Media-Icon-Hover-Effects-using-CSS-JS/
+
 using --> https://micku7zu.github.io/vanilla-tilt.js/
 
 ![effect-1](https://user-images.githubusercontent.com/73035495/232322034-1fadd186-5164-424e-8ebc-a47a2c09a491.png)
