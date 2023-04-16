@@ -1,10 +1,8 @@
 
-
-//vanilla tilt.js  --> https://micku7zu.github.io/vanilla-tilt.js/
-
 let list = document.querySelectorAll('.sci li');
 let bg = document.querySelector('.socialMedia');
 
+// on mark change color by set on list icon  --> <li data-text="Facebook" data-color="#1877f2">
 list.forEach(elements => {
     elements.addEventListener('mouseenter', function (event){
         let color = event.target.getAttribute('data-color');
